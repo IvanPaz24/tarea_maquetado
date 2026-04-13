@@ -11,7 +11,7 @@ export const routes: Routes = [
     },
     {
         path: "",
-        redirectTo: "/",
+        redirectTo: "bienvenida",
         pathMatch: "full"
     },
     {
@@ -25,6 +25,10 @@ export const routes: Routes = [
     {
         path: "sobre-mi",
          loadComponent: () => import('./pages/sobre-mi/sobre-mi').then((m) => m.SobreMi ) 
+    },
+    {
+        path: "perfil",
+        loadComponent: () => import('./pages/perfil/perfil').then((m) => m.Perfil )
     },
     { 
         path: "error",

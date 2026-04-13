@@ -1,12 +1,15 @@
+<!-- @if(this.http.usuarioRecibido()){
+    <p>{{ this.http.usuarioRecibido().name }}</p>
+} -->
 <nav>
     <button routerLink="login">Login</button>
     <button routerLink="registro">Registro</button>
     <button routerLink="bienvenida">Bienvenida</button>
     <button routerLink="sobre-mi">Sobre Mí</button>
     <button routerLink="error">Error</button>
+    <button routerLink="perfil">Perfil</button>
 
 
 </nav>
-
 
 <router-outlet></router-outlet>

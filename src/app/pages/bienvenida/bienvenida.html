@@ -4,3 +4,15 @@
       <label class="btn-txt">Bienvenido</label>
     </button>
 </div>
+
+<div id="card">
+    <div>
+        @for (item of usuarios; track $index) {
+            <app-card 
+            [titulo]="item.titulo" 
+            [subtitulo]="item.subtitulo" 
+            [img]="item.img"
+            [link]="item.link"></app-card>
+        }
+    </div>
+</div>

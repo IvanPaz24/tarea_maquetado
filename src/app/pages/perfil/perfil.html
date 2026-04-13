@@ -1,0 +1,13 @@
+@if(this.usuarioRecibido()){
+    <p>{{ this.usuarioRecibido().name }}</p>
+    <img [src]="this.usuarioRecibido().avatar_url" alt="Avatar" width="100">
+    <p>{{ this.usuarioRecibido().bio }}</p>
+    <a [href]="this.usuarioRecibido().html_url" target="_blank">Ver Perfil</a>
+
+    <app-card 
+        [titulo]="this.usuarioRecibido().name" 
+        [subtitulo]="this.usuarioRecibido().bio" 
+        [img]="this.usuarioRecibido().avatar_url" 
+        [link]="this.usuarioRecibido().html_url">
+    </app-card>
+}
